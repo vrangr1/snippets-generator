@@ -34,4 +34,4 @@ description : Snippet Description
 ```
 
 ## Sample
-For reference ```sample_snippet.cpp``` and ```sample_snippet.code-snippets``` are present in the repository.  
+For reference ```sample/sample_snippet.cpp``` and ```sample/sample_snippet.code-snippets``` are present in the repository.  
