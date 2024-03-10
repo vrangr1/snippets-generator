@@ -1,15 +1,23 @@
 # VS Code Snippet Generator
+## Description:
+VS Code Snippet Generator reads every cpp file in the ```input_dir``` and creates a VS Code Snippet based on the same and writes it to ```output_dir```.
 
-Usage:  
-```python snippet_generator.py [input_dir] [output_dir]```
-  
-input_dir: path to the directory where the cpp snippets are stored  
-output_dir: path to the directory where the VS Code snippets based on the cpp files in input_dir are supposed to be created  
-  
-Description:  
-VS Code Snippet Generator reads every cpp file in the input_dir and creates a VS Code Snippet based on the same  
+## Usage:
+```
+usage: snippet_generator.py [-h] [input_dir] [output_dir]
 
-CPP File Structure Expected:  
+VS Code Snippet Generator
+
+positional arguments:
+  input_dir   path to the directory where all the cpp snippets are stored
+  output_dir  path to the directory where the VS Code Snippets are supposed to be written
+
+optional arguments:
+  -h, --help  show this help message and exit
+```
+  
+
+## CPP File Structure Expected:
 ```
 /*
 Details for snippet generator program:
@@ -25,4 +33,5 @@ description : Snippet Description
 #endif
 ```
 
+## Sample
 For reference ```sample_snippet.cpp``` and ```sample_snippet.code-snippets``` are present in the repository.  

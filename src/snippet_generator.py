@@ -41,12 +41,12 @@ class Details(Enum):
 
 def parse_args(args=None):
     parser = argparse.ArgumentParser(description ='VS Code Snippet Generator')
-    parser.add_argument('input_dir', metavar ='ID', type=str, nargs='?',\
+    parser.add_argument('input_dir', type=str, nargs='?',\
                         default="/Users/anavp/home/programming/competitive-programming/algo/snippets_code",\
-                        help='path to the directory where all the snippets in cpp files are stored')
-    parser.add_argument('output_dir', metavar='OD', type=str, nargs='?',\
+                        help='path to the directory where all the cpp snippets are stored')
+    parser.add_argument('output_dir', type=str, nargs='?',\
                         default="/Users/anavp/home/programming/competitive-programming/.vscode",\
-                        help='path to the directory where the vs code snippets are supposed to be written')
+                        help='path to the directory where the VS Code Snippets are supposed to be written')
     args = parser.parse_args()
     return args
 
