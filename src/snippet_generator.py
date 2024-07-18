@@ -3,7 +3,7 @@ import pathlib
 import argparse
 from enum import Enum
 
-SOURCE_EXTENSION=".cpp"
+SOURCE_EXTENSION=".hpp"
 TARGET_EXTENSION=".code-snippets"
 TAB="    "
 
