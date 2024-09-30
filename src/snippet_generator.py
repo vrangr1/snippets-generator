@@ -69,6 +69,7 @@ def process_file(file_path : str, write_dir : str) -> None:
     space += TAB
     for line in lines[:-1]:
         line = line.strip('\n')
+        line = line.replace("\\","\\\\")
         write_file.write(space + f'"{line}",\n')
     write_file.write(space + f'"{lines[-1].strip()}"\n')
     
